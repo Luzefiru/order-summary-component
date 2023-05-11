@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,28 +14,67 @@
     <link rel="stylesheet" href="./dist/output.css" />
 
     <title>Frontend Mentor | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+  <body
+    class="bg-primary-pale-blue bg-contain bg-no-repeat bg-mobile lg:bg-desktop h-full grid place-items-center"
+  >
+    <div
+      class="shadow-[0_16px_16px_-8px_rgba(118,108,241,0.3)] max-w-sm bg-white m-6 flex flex-col rounded-2xl overflow-hidden justify-center"
+    >
+      <img
+        src="./images/illustration-hero.svg"
+        alt="Happy person happily dancing to music"
+      />
+      <div class="p-6 pb-4">
+        <h2 class="mt-2 text-2xl font-black text-neutral-dark-blue text-center">
+          Order Summary
+        </h2>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+        <p
+          class="text-base text-center mx-2 my-5 text-neutral-desaturated-blue"
+        >
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+
+        <div
+          class="flex gap-4 text-sm items-center mb-6 p-4 bg-neutral-very-pale-blue rounded-lg"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+              <path
+                fill="#717FA6"
+                fill-rule="nonzero"
+                d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"
+              />
+            </g>
+          </svg>
+          <div>
+            <h3 class="text-neutral-dark-blue font-black">Annual Plan</h3>
+            <span class="text-neutral-desaturated-blue font-bold"
+              >$59.99/year</span
+            >
+          </div>
+
+          <a
+            href="#"
+            class="ml-auto text-primary-bluish-purple underline font-bold hover:text-primary-medium-slate-blue hover:no-underline"
+            >Change</a
+          >
+        </div>
+
+        <button
+          class="shadow-[0_16px_16px_-4px_rgba(118,108,241,0.3)] hover:bg-primary-medium-slate-blue w-full bg-primary-bright-blue rounded-lg py-3 text-white font-bold"
+        >
+          Proceed to Payment
+        </button>
+        <button
+          class="hover:text-neutral-dark-blue w-full text-neutral-desaturated-blue font-bold py-3 mt-2"
+        >
+          Cancel Order
+        </button>
+      </div>
     </div>
   </body>
 </html>

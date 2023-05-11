@@ -90,7 +90,7 @@ module.exports = {
 };
 ```
 
-> I need to remember to remove any `.` relative paths when I use `url()` CSS functions and also to `@import` my `fontFamily` typefaces inside my `input.css` together with the `@tailwind` CSS directives.
+> I need to remember to remove any `.` relative paths when I use `url()` CSS functions because the final CSS will be based on the output directory of the `tailwind build` command and also I need to `@import` my `fontFamily` typefaces inside my `input.css` together with the `@tailwind` CSS directives.
 
 ### Continued development
 

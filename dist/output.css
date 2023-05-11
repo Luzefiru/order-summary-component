@@ -623,19 +623,11 @@ video {
 }
 
 .bg-mobile{
-  background-image: url('/images/pattern-background-mobile.svg');
-}
-
-.bg-cover{
-  background-size: cover;
+  background-image: url('../images/pattern-background-mobile.svg');
 }
 
 .bg-contain{
   background-size: contain;
-}
-
-.bg-top{
-  background-position: top;
 }
 
 .bg-no-repeat{
@@ -743,6 +735,6 @@ video {
 
 @media (min-width: 1024px){
   .lg\:bg-desktop{
-    background-image: url('/images/pattern-background-desktop.svg');
+    background-image: url('../images/pattern-background-desktop.svg');
   }
 }

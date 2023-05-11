@@ -20,8 +20,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        desktop: "url('/images/pattern-background-desktop.svg')",
-        mobile: "url('/images/pattern-background-mobile.svg')",
+        desktop: "url('../images/pattern-background-desktop.svg')",
+        mobile: "url('../images/pattern-background-mobile.svg')",
       },
     },
   },
